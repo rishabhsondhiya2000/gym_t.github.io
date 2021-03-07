@@ -1,0 +1,675 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 33%;
+    border: black solid;
+    border-radius: 200px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0);
+    padding: 2px 0;
+}
+
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 16px 28px;
+}
+
+.nav-list li a{
+    text-decoration:none;
+    color:white;
+}
+
+.nav-list li a:hover{
+    text-decoration:none;
+    color:rgb(158, 158, 158);
+}
+
+.right-nav{
+    width: 30%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+    
+}
+
+#search{
+    font-size: 13px;
+    padding: 2px;
+    padding-left: 2px;
+    border-radius: 26px;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.4) url('../images/try2.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
+
+.first-section{
+    height: 92vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 68%;
+    
+    margin: auto;
+    height: 80%;
+}
+.firsthalf{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.secondhalf{
+    width: 20%;
+    text-align: center;
+}
+.secondhalf img{
+    width: 55%;
+    border-radius: 155px;
+    
+}
+
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    /* height: 47px; */
+    max-width: 80%;
+    margin: auto;
+    padding: 27px 0px;
+    
+}
+.paras{
+    padding: 0px 35px;
+}
+.thumbnail{
+    width: 66%;
+    text-align: center;
+}
+.thumbnail img{
+    height: 159px;
+    border-radius: 100px;
+}
+
+.leftsection{
+    
+    flex-direction: row-reverse;
+    
+}
+
+
+
+.price{
+    background-color: rgb(209, 209, 209);
+}
+
+.footer{
+    color: white;
+    padding: 7px;
+    text-align: center;
+    background-color: black;
+    
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    border: white solid 1px;
+    border-radius: 10px;
+    padding: 5px 5px;
+    cursor: pointer;
+    width: 20%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover{
+    box-shadow: 0 0 8px white;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.content{
+    display: flex;
+    
+}
+
+.topic{
+    margin-bottom: 35px;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    color :#696969c7;
+    transition: 0.5s;
+    
+    
+}
+.topic:hover{
+    color: black;
+    
+}
+
+
+
+.tile{
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 30px;
+    margin-right: 44px; 
+    text-align: center;
+}
+
+
+
+.contact{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    display: flex;
+    text-align: right;
+    padding: 13px 0;
+    padding-right: 13px;
+    font-size: 12px;
+    font-family:'Times New Roman', Times, serif;
+    
+    
+}
+
+.left{
+    width: 50%;
+    text-align: left;
+    padding: 0 1%;
+    color: rgb(167, 167, 167);
+    
+}
+.left:hover{
+    color: white;
+}
+.right{
+    width: 50%;
+}
+
+.right a{
+    color: rgb(143, 143, 143);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.right :hover{
+    color:white;
+}
+
+
+
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 7%;
+    top: 15px;
+    display: none;
+}
+
+.line{
+    background-color: white;
+    width: 33px;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+.sectiontag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+
+
+.photo{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 219, 219);
+    padding-bottom: 30px;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 0;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    
+}
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    height: 100%;
+    width: 100%;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 59.33%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+.manual-btn:not(:last-child){
+    margin-right: 5%;
+}
+
+.manual-btn:hover{
+    background-color: white;
+    box-shadow: 0 0 9px white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 59.33%;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid white;
+    padding:5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 5%;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+/*------------------------------------------------------*/
+
+.content{
+    display: flex;
+    flex-direction: column;
+    color :white;
+    width: 70%;
+    padding-bottom: 40px;
+}
+
+.price-head{
+    background-color: rgb(128, 128, 128);
+    padding: 0 15px;
+    cursor: pointer;
+    border: 3px solid rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.price-head:hover{
+    box-shadow: 0 0 15px black;
+}
+
+.price-list{
+    height: 10%;
+    background-color: rgb(129, 129, 129);
+    border-radius: 10px;
+    transition: all 1.5s ease-out;
+    display: flex;
+    justify-content: center;
+}
+.price-list li{
+    padding: 7px 0;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.price-list li:hover{
+   color:black;
+    
+}
+
+.price-list-click{
+    display: none;
+}
+
+.facility{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(209, 209, 209);
+    padding-bottom: 70px;
+    color:rgb(109, 109, 109) ;
+}
+
+.all-facility{
+    display: flex;
+    justify-content: center;
+}
+
+.all-facility div{
+    margin: 0 5%;
+    font-weight: bold;
+}
+.all-facility div:hover{
+    color: black;
+}
+
+.equipment{
+    background-color: rgb(209, 209, 209);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(109, 109, 109);
+}
+
+
+
+.all-equi-1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.all-equi-2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.all-equi-1 div{
+    margin: 0 4%;
+    font-weight: bold;
+    
+    text-align: center;
+}
+.all-equi-1 div:hover{
+    color: black;
+}
+.all-equi-2 div:hover{
+    color: black;
+}
+.all-equi-2 div{
+    margin: 0 2%;
+    font-weight: bold;
+    
+    padding-left: 38px;
+    text-align: center;
+}
+
+.secondhalf img{
+    display: none ;
+}
+
+
+
+@media only screen and (max-width:954px){
+    .btn{
+        width: 60%;
+    }
+    .secondhalf img{
+        display: block;
+        
+    }
+    .navigation-manual{
+        width: 77.33%;
+        margin-top: -162px;
+    }
+    .photo{
+        height: 76vh;
+    }
+
+    .navigation-auto{
+        width: 77.33%;
+        margin-top: 338px;
+    }
+    .secondhalf{
+        text-align: -webkit-center;
+        width: 63%;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.5s ease-out;
+        height: 345px;
+    }
+    .right-nav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 60px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .big-text{
+        text-align: center;
+    }
+    
+    .small-text{
+        text-align: center;
+    }
+    .section{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .content{
+        flex-direction: column; 
+        width: 90%;  
+    }
+   
+    .contact{
+        font-size: 11px;
+    }
+    .paras{
+        width: 100%;
+    }
+    .footer{
+        font-size: 10px;
+    }
+    .first-section{
+        height: 82vh;
+    }
+    .logo{
+        width: 100px;
+    }
+    .background{
+        background: rgba(0, 0, 0, 0.7) url('../images/bi3.jpg');
+        background-size: cover;
+    }
+
+    .slider{
+        width: 80%;
+        height: 50vh;
+    }
+    .all-facility{
+        flex-direction: column;
+    }
+    .all-facility div{
+        margin: 5%;
+    }
+
+    .all-equi-1{
+        flex-direction: column;
+    }
+    .all-equi-1 div{
+        margin: 5%;
+    }
+
+    .all-equi-2{
+        flex-direction: column;
+    }
+    .all-equi-2 div{
+        margin: 5%;
+        padding-left: 0;
+    }
+    .price-list{
+        text-align: center;
+    }
+    
+    .price-list ul{
+        list-style: none;
+    }
+    .rateus form{
+        width: 60%;
+        margin: 0px 75px;
+    }
+    .rateus form button{
+        width: 40%;
+    }
+    .thumbnail img {
+        height: 170px;
+    }
+}
+
+.rateus{
+    background-color: rgb(194, 194, 194);
+}
+
+.rateus form{
+    display:flex;
+    flex-direction: column;
+    margin:  0 30%;
+    padding:20px 0;
+    text-align: center;
+}
+.rateus form input{
+     margin: 10px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    height: 30px;
+    padding-left: 5px;
+    background: transparent;
+    border-bottom: rgb(59, 59, 59) 2px solid;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    font-size: 17px;
+    
+}
+
+.rateus form input:hover{
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    background: rgb(224, 224, 224);
+}
+.rateus form button{
+    width: 15%;
+    height: 35px;
+    margin-top: 10px ;
+    background: transparent;
+    border: 2px black solid;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 5px black;
+    
+}
+.rateus form button:hover{
+    box-shadow: 0 0 15px black;
+    
+}
+
